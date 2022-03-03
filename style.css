@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.hero_section{
+    width: 100vw;
+    height: 100vh;
+    background: url('hero_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .hero_section ::after{
+    content: '';
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+} */
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+
+}
+
+
+.nav_parent{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.nav_logo{
+    padding: 3rem;
+    color: white;
+
+}
+
+.list_items li{
+    display: inline-block;
+    padding: 3rem 1rem;
+
+}
+
+.list_items li a{
+    color: white;
+
+}
+
+.nav_btn{
+    padding: 3rem;
+}
+
+.nav_btn a{
+    padding: 12px;
+    background-color: rgb(167, 204, 125);
+    color: white;
+}
+
+.hero_parent{
+   
+    width: 100vw;
+    height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+
+}
+
+.hero_content h1{
+    font-size: 4rem;
+    padding: 1rem;
+
+}
+
+.hero_content p{
+    font-size: 1.2rem;
+    padding: 0.5rem 0.3rem;
+background-color: rgba(167, 204, 125, 0.61);
+border: 1px solid rgba(255, 255, 0, 0.438);
+}
+
+
+.about_section{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+.left_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+   
+}
+
+.left_about_img{
+    width: 200px;
+    height: 400px;
+}
+
+.left_about_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.right_about{
+    width: 30%;
+    height: 60vh;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.right_about h2{
+    font-size: 3rem;
+}
+
+.right_about_head ::after , .menu_head::after{
+    content: '';
+    display:block;
+    width: 8rem;
+    max-width:70%;
+    border-bottom: 0.3rem solid rgb(167, 204, 125);
+    margin: auto;
+    padding-top: 10px;
+}
+
+.right_about p{
+    font-size: 1.1rem;
+    opacity: 0.7;
+    padding-top: 3rem;
+}
+/* 
+.menu_section{
+    width: 60vw;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+
+.menu_section h2{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+}
+
+.menu_items{
+    width: 80%;
+}
+
+
+
+.item_name p{
+    line-height: 2rem;
+}
+.first{
+    /* float: left; */
+    /* padding-left: 3rem;
+  
+}
+.first span{
+    float: right;
+} */ 
+
+.book_section{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+.left_book{
+    width: 30%;
+    height: 60vh;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.left_book h2{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.left_book_head{
+    content: '';
+    display:block;
+    width: 20rem;
+    max-width:100%;
+    border-bottom: 0.3rem solid rgb(167, 204, 125);
+    margin: auto;
+    padding-top: 10px;
+}
+
+.left_book p{
+    font-size: 1.1rem;
+    opacity: 0.7;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+/* .img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.right_book{
+    display: grid;
+grid-template-areas:'img1 img1 img1 img1 img1 img1'
+
+'img2 img2 img3 img3 img3 img3';   
+
+grid-gap: 10px;
+   
+} */
+
+.right_book_img{
+    width: 300px;
+    height: 300px;
+}
+
+.right_book_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.chef_section{
+
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+
+
+
+.left_chef_img{
+    width: 400px;
+    height: 300px;
+}
+
+.left_chef_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.right_chef{
+    width: 30%;
+    height: 60vh;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.right_chef h2{
+    font-size: 3rem;
+}
+
+.right_chef_head ::after{
+    content: '';
+    display:block;
+    width: 8rem;
+    max-width:70%;
+    border-bottom: 0.3rem solid rgb(167, 204, 125);
+    margin: auto;
+    padding-top: 10px;
+}
+
+.right_chef p{
+    font-size: 1.1rem;
+    opacity: 0.7;
+    padding-top: 3rem;
+}
+
+
+.footer_section{
+    width: 100vw;
+    /* height: 40vh; */
+    background-color:black;
+    color: white;
+}
+
+.footer_section h2{
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+}
+
+.footer_parent{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_parent p{
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+.footer_parent li{
+    padding-bottom: 1.5rem;
+}
+
+.footer_para p{
+    text-align: center;
+    padding-bottom: 2rem;
+}
